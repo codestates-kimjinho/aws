@@ -31,7 +31,7 @@ jobs:
         with:
           host: ec2-3-35-177-246.ap-northeast-2.compute.amazonaws.com
           username: ubuntu
-          key: ${{ secrets.PRIVATE_KEY }}
+          key: ${{ secrets.KEY }}
           envs: GITHUB_SHA
           script: |
             docker pull akjadglkhadgj/spring-cicd:${GITHUB_SHA::7}
